@@ -1,0 +1,23 @@
+========To Create person nodes============
+USING PERIODIC COMMIT
+LOAD CSV WITH HEADERS FROM "http://www.cs.odu.edu/~bpotinen/NoSql/data/persons.csv" AS row
+CREATE (:Person {personId: row.id, name: row.name});
+=======To create movie nodes===============
+USING PERIODIC COMMIT
+LOAD CSV WITH HEADERS FROM "http://www.cs.odu.edu/~bpotinen/NoSql/data/movie.csv" AS row
+CREATE (:Movie {movieId: row.movie_id, title: row.title});
+=======To Create relationship between actors and movies============
+USING PERIODIC COMMIT
+LOAD CSV WITH HEADERS FROM "http://www.cs.odu.edu/~bpotinen/NoSql/data/acted.csv" AS row
+MATCH (person:Person {personId: row.id})
+MATCH (movie:Movie {movieId: row.movie_id})
+MERGE (person)-[:ACTED_IN]->(movie);
+
+=========To create relationship between dierctor and movies===========
+USING PERIODIC COMMIT
+LOAD CSV WITH HEADERS FROM "http://www.cs.odu.edu/~bpotinen/NoSql/data/directed.csv" AS row
+MATCH (person:Person {personId: row.id})
+MATCH (movie:Movie {movieId: row.movie_id})
+MERGE (person)-[:DIRECTED]->(movie);
+
+
