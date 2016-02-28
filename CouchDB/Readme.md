@@ -18,3 +18,5 @@ percentages_of_triva_w.r.t_mv.csv ==> contains % of movies which have trivia inf
 
 These files are used with matl=plotlib to plot the required infromation
 
+![Alt Text](https://github.com/bpoti001/Exploring_Nosql/raw/master/CouchDB/results_images/file-page1.jpg)
+![Alt Text](https://github.com/bpoti001/Exploring_Nosql/raw/master/CouchDB/results_images/file-page2.jpg)
