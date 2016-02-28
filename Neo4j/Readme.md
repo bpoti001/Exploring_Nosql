@@ -1,5 +1,5 @@
 To create data in Neo4j we need the nodes and relationship. 
-In this part I try to find the relation between ìAbadal, Baltaserî and "A. Martin, Mitchellî
+In this part I try to find the relation between ‚ÄúAbadal, Baltaser‚Äù and "A. Martin, Mitchell‚Äù
 
 
 From PostgreSql extracted the below data
@@ -9,4 +9,4 @@ Relationship between actors and movies
 
 "Load" file is used to load the data into Neo4j which created nodes and relationships between nodes. 
 "Query" file is used to query out the shortest path between the two presons. 
-
+![Alt Text](https://github.com/bpoti001/Exploring_Nosql/raw/master/Neo4j/results_readme/Results.png)
