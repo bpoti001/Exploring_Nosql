@@ -15,3 +15,4 @@ distance from A to B /number of movies at B
 
 Plotted the travelling sales man problem using matplolib
 
+![Alt Text](https://github.com/bpoti001/Exploring_Nosql/raw/master/MongoDB/result_image/RESULTS%20(1)-1.png)
